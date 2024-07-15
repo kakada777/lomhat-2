@@ -51,7 +51,7 @@ class View {
                         <img src="${v.Image}" alt="">
                         <h1>${v.Name}</h1>
                         <h2 >${v.price}</h2>
-                        <button class="btn ">Add to cart</button>
+                        <button class="btn"  onclick="myfucntion()">Add to cart</button>
                         <i class="fa-solid fa-heart"></i>
                       </div>
                     </div>
@@ -239,4 +239,27 @@ class Data {
         ]
     }
 }
+ function myfucntion(){
+    alert("Thank you for support");
+}
+// model
+document.getElementById("button").addEventListener("click",function(){
+    document.querySelector(".popub").style.display ="flex";
+});
+document.querySelector(".close").addEventListener("click",function(){
+    document.querySelector(".popub").style.display ="none";
+});
 
+document.getElementById("button1").addEventListener("click",function(){
+    document.querySelector(".popub1").style.display ="flex";
+});
+document.querySelector(".close1").addEventListener("click",function(){
+    document.querySelector(".popub1").style.display ="none";
+});
+
+document.getElementById("button2").addEventListener("click",function(){
+    document.querySelector(".popub2").style.display ="flex";
+});
+document.querySelector(".close2").addEventListener("click",function(){
+    document.querySelector(".popub2").style.display ="none";
+});

@@ -78,7 +78,7 @@
     transition: 1s ;
 }
 .child-box1 .btn:hover{
-
+    box-shadow:  0px 1px 5px 4px rgb(239, 86, 72);
     color: white;
     background-color: rgb(237, 6, 6);
 }
@@ -231,6 +231,7 @@
 }
 .child-box2 .btn:hover{
     color: white;
+    box-shadow:  0px 1px 5px 4px rgb(239, 86, 72);
     background-color: rgb(237, 6, 6);
 }
 .child-box2 i{
@@ -241,6 +242,84 @@
 
 .child-box2 i:hover{
     color: red;
+}
+/* model */
+.popub {
+    display: none; /* Hide popup by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+.popub-content {
+    width: 400px;
+    height: 650px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+.popub-content h1{
+    font-size: 25px;
+}
+.popub-content img{
+    width: 300px;
+    height: 300px;
+    margin-top: -50px;
+}
+.popub-content .close{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 135px;
+    right: 555px;
+    cursor: pointer;
+}
+.i h1{
+    margin-top: 5px;
+    color: rgb(141, 138, 136);
+    font-size: 10px;
+}
+.popub-content .i-1{
+    color: rgb(233, 204, 36);
+}
+.popub-content .color .btn{
+    width: 45px;
+    height: 40px;
+    margin: 10px;
+}
+.popub-content .back{
+    width: 400px;
+    height: 50px;
+    margin-left: -20px;
+    margin-top: 41px;
+   border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 10px 20px 1px black;
+    background-color: rgb(255, 254, 254);
+    align-items: center;
+    justify-content: space-between;
+}
+.popub-content h2{
+    font-size: 25px;
+}
+.popub-content .btn{
+    background-color: rgb(162, 157, 157);
+    transition: 1s;
+}
+.popub-content .btn:hover{
+    color: white;
+    background-color: black;
+}
+.popub-content .k{
+    height: 40px;
+    color: white;
+    border-radius: 15px;
+    
+    background-color: rgb(235, 142, 20);
 }
 /* fulter */
 .main-box1{
