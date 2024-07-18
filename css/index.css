@@ -30,6 +30,35 @@
     width: 600px;
     height: 400px;
 }
+@media (max-width:926px) {
+    .container-1{
+        height: 450px;
+        background-color: antiquewhite;
+    }
+    .body-left{
+        margin-top: 80px;
+    }
+    .body-left >h1{
+        width: 150px;
+        font-size: 25px;
+    }
+    .body-left > p{
+        font-size: 10px;
+    }
+    .body-left .btn{
+        width: 110px;
+        border-radius: 50px;
+        font-size: 15px;
+        margin-top: 10px;
+        box-shadow: 1px 5px 10px 2px black;
+    }
+    .body-right >img{
+        width: 300px;
+        height: 250px;
+        margin-top: 50px;
+       
+    }
+}
 .container-2{
     width: 100%;
     margin-top: 50px;
@@ -256,7 +285,7 @@
     align-items: center;
 }
 .popub-content {
-    width: 400px;
+    width: 370px;
     height: 650px;
     background-color: white;
     padding: 20px;
@@ -272,12 +301,32 @@
     margin-top: -50px;
 }
 .popub-content .close{
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 30px;
     position: absolute;
     top: 135px;
-    right: 555px;
+    right: 570px;
     cursor: pointer;
+}
+@media (max-width:1180px)  {
+    .popub-content .close{
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        top: 280px;
+        right: 230px;
+        cursor: pointer;
+    }
+}
+@media (max-width:926px)  {
+    .popub-content .close{
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        top: 135px;
+        right: 30px;
+        cursor: pointer;
+    }
 }
 .i h1{
     margin-top: 5px;
@@ -293,7 +342,7 @@
     margin: 10px;
 }
 .popub-content .back{
-    width: 400px;
+    width: 370px;
     height: 50px;
     margin-left: -20px;
     margin-top: 41px;
