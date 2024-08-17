@@ -12,8 +12,10 @@
 .container-1{
     height: 500px;
     background-color: antiquewhite;
+    
 }
 .body-left{
+    width: 100%;
     margin-top: 150px;
 }
 .body-left >h1{
@@ -26,9 +28,14 @@
     margin-top: 10px;
     box-shadow: 1px 5px 10px 2px black;
 }
+.body-right{
+    width: 100%;
+}
 .body-right >img{
-    width: 600px;
+    margin-left: 200px;
+    width: 400px;
     height: 400px;
+    transition: 0.1s;
 }
 @media (max-width:926px) {
     .container-1{
@@ -55,6 +62,7 @@
     .body-right >img{
         width: 300px;
         height: 250px;
+        margin-left: 50px;
         margin-top: 50px;
        
     }

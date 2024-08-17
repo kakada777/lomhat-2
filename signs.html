@@ -22,7 +22,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">brand</a>
@@ -53,20 +53,37 @@
         <div class="box-signs">
           <h1 >Sign In</h1>
               <label for="" >Email</label>
-              <input type="password" class="form-control" name="" id="" placeholder="email">
+              <input type="text" class="form-control" name=""  placeholder="email">
               <label for="">Password</label>
               <input type="password" class="form-control" name="" id="password" placeholder="password">
-              <!-- <img src="./open-eye.png" alt=""> -->
-               <button class="btn btn-primary" >Sign in</button>
+              <img src="./open-eye.png" alt="" id="eyeicon" class="img">
+              <input type="checkbox" class="checkbox">Remember me 
+              <a href="#" >Forget password</a>
+              <button class="btn btn-primary" >Sign in</button>
+              <h4>or</h4>
               <div class="facebook ">
-                  <img src="./img/Facebook-Logosu.png" alt="">
-                  <h5>Face Book</h5>
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <h5>Login with Face Book</h5>
               </div>
               <div class="email ">
-                <img src="./img/download.png" alt="">
-                <h5>Email</h5>
+                <i class="fa-solid fa-envelope"></i>
+                <h5>Login with Email</h5>
               </div>
         </div>
       </div>
 </body>
+<script>
+    var password = document.getElementById("password");
+    var eyeicon = document.getElementById("eyeicon");
+
+    eyeicon.onclick = function(){
+      if(password.type=="password"){
+        password.type =" text";
+        eyeicon.src="open-eye.png";
+      }else{
+        password.type="password";
+        eyeicon.src="close-eye.png";
+      }
+    }
+</script>
 </html>

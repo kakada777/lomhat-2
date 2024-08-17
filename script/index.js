@@ -263,3 +263,5 @@ document.getElementById("button2").addEventListener("click",function(){
 document.querySelector(".close2").addEventListener("click",function(){
     document.querySelector(".popub2").style.display ="none";
 });
+//main shoes
+
