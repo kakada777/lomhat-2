@@ -56,7 +56,7 @@
         <button class="btn btn-dark">Shop now</button>
       </div>
       <div class="body-right">
-        <img src="./ img index/myshoes2.png" alt="" class="shoes">
+        <img src="./ img index/myshoes.png" alt="" class="shoes">
       </div>
     </div> 
     </div>
@@ -296,27 +296,43 @@
     backSpeed : 100,
     loop : true 
   })
-  $(document).ready(function(){
-    if($(".body-right").css==({"width":"100%"})){
-      $('.shoes').mouseover(function(){
-      $('.shoes').css({"width":"550px","height":"550px"});
-        $('.shoes').attr("src","./ img index/myshoes.png");
-    });
-    $('.shoes').mouseleave(function(){
-      $('.shoes').css({"width":"400px","height":"400px"});
-        $('.shoes').attr("src","./ img index/myshoes2.png");
-    });
-    }else{
-      $('.shoes').mouseover(function(){
-      $('.shoes').css({"width":"290px","height":"350px","margin-top":"10px"});
-        $('.shoes').attr("src","./ img index/myshoes.png");
-    });
-    $('.shoes').mouseleave(function(){
-      $('.shoes').css({"width":"300px","height":"250px","margin-top":"40px"});
-        $('.shoes').attr("src","./ img index/myshoes2.png");
-    });
+  $(document).ready(function() {
+    function handleResize() {
+        if (window.matchMedia("(max-width: 926px)").matches) {
+           $('.shoes').mouseover(function() {
+                $('.shoes').css({"width": "300px", "height": "250px", "margin-top": "100px"});
+                $('.shoes').attr("src", "./ img index/myshoes2.png");
+            });
+            $('.shoes').mouseleave(function() {
+                $('.shoes').css({"width": "290px", "height": "350px", "margin-top": "70px"});
+                $('.shoes').attr("src", "./ img index/myshoes.png");
+            });
+        } else {
+            $('.shoes').mouseover(function() {
+                $('.shoes').css({"width": "400px", "height": "400px","margin-top": "80px"});
+                $('.shoes').attr("src", "./ img index/myshoes2.png");
+            });
+            $('.shoes').mouseleave(function() {
+                $('.shoes').css({"width": "550px", "height": "550px","margin-top": "30px"});
+                $('.shoes').attr("src", "./ img index/myshoes.png");
+            });
+        }
     }
-  });
+    
+    handleResize();
+    $(window).resize(handleResize);
+});
+
+  // $(document).ready(function(){
+  //     $('.shoes').mouseover(function(){
+  //     $('.shoes').css({"width":"450px","height":"500px"});
+  //       $('.shoes').attr("src","./ img index/myshoes.png");
+  //   });
+  //   $('.shoes').mouseleave(function(){
+  //     $('.shoes').css({"width":"400px","height":"400px"});
+  //       $('.shoes').attr("src","./ img index/myshoes2.png");
+  //   });
+  // });
 </script>
 <!-- <span class="auto-type"></span> 
   var typed = new Typed(".auto-type",{
