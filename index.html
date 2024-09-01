@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/index.css">
-    
 </head>
 <body>   
-  <div class="container-1">
-    <div class="container head ">
+  <div class="container-1 sticky-top">
       <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid body-nav">
           <a class="navbar-brand" href="#">Shoes</a>
@@ -22,7 +21,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">brand</a>
@@ -49,17 +48,16 @@
         </div>
       </nav>
   </div>
-    <div class="container  d-flex ">
-      <div class="body-left">
-        <h1>Trendy <span class="auto-type"></span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br Quos, nesciunt! Asperiores aperiam dolores </p>
-        <button class="btn btn-dark">Shop now</button>
-      </div>
-      <div class="body-right">
-        <img src="./ img index/myshoes.png" alt="" class="shoes">
-      </div>
-    </div> 
+  <div class="container  d-flex big-box">
+    <div class="body-left">
+      <h1>Trendy <span class="auto-type"></span></h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, nesciunt! Asperiores aperiam dolores </p>
+      <button class="btn btn-dark">Shop now</button>
     </div>
+    <div class="body-right">
+      <img src="./ img index/myshoes.png" alt="" class="shoes">
+    </div>
+  </div>
   <div class="container-2">
     <h1> New Collection 2024</h1>
     <div class="gender">
@@ -145,7 +143,6 @@
                 <button class="btn">44</button>
                 <button class="btn">45</button>
               </div>
-
               <div class="back d-flex">
                  <h2 >$ 120</h2>
                  <a  class="btn k" id="button">Add to cart</a>
@@ -300,20 +297,20 @@
     function handleResize() {
         if (window.matchMedia("(max-width: 926px)").matches) {
            $('.shoes').mouseover(function() {
-                $('.shoes').css({"width": "300px", "height": "250px", "margin-top": "100px"});
-                $('.shoes').attr("src", "./ img index/myshoes2.png");
+                $('.shoes ').css({"width": "200px", "height": "250px"});
+                $('.shoes ').attr("src", "./ img index/myshoes2.png");
             });
             $('.shoes').mouseleave(function() {
-                $('.shoes').css({"width": "290px", "height": "350px", "margin-top": "70px"});
+                $('.shoes').css({"width": "220px", "height": "300px"});
                 $('.shoes').attr("src", "./ img index/myshoes.png");
             });
         } else {
             $('.shoes').mouseover(function() {
-                $('.shoes').css({"width": "400px", "height": "400px","margin-top": "80px"});
+                $('.shoes').css({"width": "400px", "height": "400px"});
                 $('.shoes').attr("src", "./ img index/myshoes2.png");
             });
             $('.shoes').mouseleave(function() {
-                $('.shoes').css({"width": "550px", "height": "550px","margin-top": "30px"});
+                $('.shoes').css({"width": "450px", "height": "430px"});
                 $('.shoes').attr("src", "./ img index/myshoes.png");
             });
         }
@@ -322,17 +319,6 @@
     handleResize();
     $(window).resize(handleResize);
 });
-
-  // $(document).ready(function(){
-  //     $('.shoes').mouseover(function(){
-  //     $('.shoes').css({"width":"450px","height":"500px"});
-  //       $('.shoes').attr("src","./ img index/myshoes.png");
-  //   });
-  //   $('.shoes').mouseleave(function(){
-  //     $('.shoes').css({"width":"400px","height":"400px"});
-  //       $('.shoes').attr("src","./ img index/myshoes2.png");
-  //   });
-  // });
 </script>
 <!-- <span class="auto-type"></span> 
   var typed = new Typed(".auto-type",{

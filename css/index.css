@@ -10,10 +10,11 @@
     margin-left: 100px;
 }
 .container-1{
-    height: 450px;
-    background-color: rgb(217, 216, 214);
-    
+    height: 55px;
+    background-color: rgb(243, 241, 239);
+    box-shadow: 0px 2px 10px black;
 }
+
 .body-left{
     width: 100%;
     margin-top: 100px;
@@ -30,17 +31,17 @@
 }
 .body-right{
     width: 100%;
-    margin-top: -100px;
+    height: 300px;
+    
 }
 .body-right >img{
     margin-left: 200px;
-    width: 500px;
-    height: 550px;
-    transition: 0.1s;
+    width: 400px;
+    height: 450px;
 }
 @media (max-width:926px) {
     .container-1{
-        height: 400px;
+        height: 50px;
         background-color: rgb(217, 216, 214);
     }
     .body-left{
@@ -64,9 +65,7 @@
     .body-right >img{
         width: 250px;
         height: 400px;
-        margin-left: 50px;
-        margin-top: 60px;
-       
+        margin-left: 10px;       
     }
 }
 .container-2{
@@ -85,6 +84,7 @@
     color: rgb(247, 245, 245);
     box-shadow: 1px 1px 10px red;
 }
+
 /* ?? */
 .main-box{
     width: 100%;
@@ -316,18 +316,8 @@
     height: 30px;
     position: absolute;
     top: 135px;
-    right: 570px;
+    right: 650px;
     cursor: pointer;
-}
-@media (max-width:1180px)  {
-    .popub-content .close{
-        width: 35px;
-        height: 30px;
-        position: absolute;
-        top: 280px;
-        right: 230px;
-        cursor: pointer;
-    }
 }
 @media (max-width:926px)  {
     .popub-content .close{
@@ -336,6 +326,26 @@
         position: absolute;
         top: 135px;
         right: 30px;
+        cursor: pointer;
+    }
+}
+@media (max-width:1280px)  {
+    .popub-content .close{
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        top: 130px;
+        right: 460px;
+        cursor: pointer;
+    }
+}
+@media (max-width:1180px)  {
+    .popub-content .close{
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        top: 280px;
+        right: 230px;
         cursor: pointer;
     }
 }
@@ -383,7 +393,7 @@
 }
 /* fulter */
 .main-box1{
-    height: 380px;
+    height:420px;
     background-color: black;
     display: flex;
     justify-content: space-between;

@@ -27,14 +27,15 @@
 }   
 .box-signs{
     width: 400px;
-    height: 450px;
+    height: 500px;
     border-radius: 20px;
+    margin-top: 150px;
     box-shadow: 1px 1px 10px black;
 }
 
 .box-signs label{
     width: 50px;
-    margin-left: 90px;
+    margin-left: 57px;
 }
 .box-signs .form-control{
     width: 280px;
@@ -64,18 +65,20 @@
 } 
 .box-signs h4{
     margin-left: 185px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .facebook{
     width: 70%;
     height: 35px;
-    margin: 20px 0px 0px 60px;
+    margin: 10px 0px 0px 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-radius: 30px;
-    background-color: rgb(46, 46, 220);
+    border-radius: 20px;
+    background-color: rgb(69, 69, 233);
     box-shadow: 1px 1px 6px black;
+    cursor: pointer;
+
 }
 .facebook i{
     width: 50px;
@@ -88,6 +91,9 @@
     color: white;
     font-size: 16px;
 }
+.facebook:hover{
+    box-shadow: 2px 2px 10px rgb(46, 46, 220);
+}
 .email{
     width: 70%;
     height: 35px;
@@ -95,9 +101,14 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 1px 1px 6px black;
-    background-color: red;
+    background-color: rgb(242, 65, 65);
+    cursor: pointer;
+}
+.email:hover{
+    
+    box-shadow: 2px 2px 10px rgb(242, 65, 65);
 }
 .email i{
     width: 50px;
